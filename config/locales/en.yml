@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  sample: "Ruby on Rails Tutorial Sample App"
+  help: "Help"
+  sampleapp: "Sample App"
