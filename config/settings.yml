@@ -1,0 +1,3 @@
+size_name: 50
+size_validates: 255
+size_validates_min: 8
