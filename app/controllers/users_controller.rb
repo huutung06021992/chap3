@@ -17,7 +17,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new user_params
-
     if @user.save
       @user.send_activation_email
       flash[:info] = t "please_check"
@@ -48,7 +47,6 @@ class UsersController < ApplicationController
 
   def verify_user
     @user = User.find_by id: params[:id]
-    #redirect_to root_url unless @user.current_user? current_user
   end
 
   def current_user? user
