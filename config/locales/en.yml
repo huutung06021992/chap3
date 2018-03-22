@@ -46,6 +46,7 @@ en:
   forgot_password: "Forgot password"
   email_reset_pass: "Email sent with password reset instructions"
   email_not_fond: "Email address not found"
+  email_nil: "Email empty"
   pass_reset: "Password reset"
   reset_pass: "Reset password"
   update_pass: "Update password"
@@ -55,9 +56,24 @@ en:
   pass_no_reset: "Password reset has expired."
   no_link: "Invalid activation link"
   confirmation: "Confirmation"
+  post: "Posted"
+  ago: "ago."
+  microposts: "Microposts"
+  micro_create: "Micropost created!"
+  micro_delete: "Micropost deleted"
+  no_micro_delete: "No micropost deleted"
+  form_cons: The form contains
+  confirmation: "Confirmation"
+  alert_img: "Maximum file size is 5MB. Please choose a smaller file."
+  no_link: "Invalid activation link"
+  delete: "Delete"
   submit: "Submit"
   reset_pass_click: "To reset your password click the link below:"
   link_hours: "This link will expire in two hours."
   text_pass: "This link will expire in two hours.
-If you did not request your password to be reset, please ignore this email and
-your password will stay as it is."
+  If you did not request your password to be reset, please ignore this email and
+  your password will stay as it is."
+  micropost_feed: "Micropost Feed"
+  rails_logo: "Rails logo"
+  doc_pass: "If you did not request your password to be reset, please ignore this email and
+  your password will stay as it is."
