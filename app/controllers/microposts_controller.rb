@@ -22,7 +22,6 @@ class MicropostsController < ApplicationController
       flash[:danger] = t "no_micro_delete"
       redirect_to root_url
     end
-
   end
 
   private
