@@ -31,3 +31,37 @@
 
 en:
   hello: "Hello world"
+
+  sample: "Ruby on Rails Tutorial Sample App"
+
+  help: "Help"
+
+  new: "News"
+
+  helppage: "Rails Tutorial help page"
+
+  sampleapp: "Sample App"
+
+  welcome: "Welcome to the Sample App"
+
+  tutorial: "Ruby on Rails Tutorial"
+
+  name: "Michael Hartl"
+
+  about: "About"
+
+  contact: "Contact"
+
+  home: "Home"
+
+  help: "Help"
+
+  login: "Log in"
+
+  homepage: "This is the home page for the"
+
+  signup: "Sign up now!"
+
+  signup2: "Sign up"
+
+
