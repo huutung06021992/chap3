@@ -42,7 +42,9 @@ en:
 
   sampleapp: "Sample App"
 
-  welcome: "Welcome to the Sample App"
+  no_find_user: "no_find_user"
+
+  welcome: "Welcome to the Sample App!"
 
   tutorial: "Ruby on Rails Tutorial"
 
@@ -64,4 +66,7 @@ en:
 
   signup2: "Sign up"
 
+  create_account: "Create my account"
+
+  create_user: "Error! Please create user!"
 
