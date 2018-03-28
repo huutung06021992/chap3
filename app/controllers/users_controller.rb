@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     if @user.nil?
-      flash[:error] = I18n.t("no_find_user")
+      flash[:error] = t "no_find_user"
       redirect_to users_url
     end
   end
@@ -20,10 +20,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
     log_in @user
-    flash[:success] = I18n.t("welcom")
+    flash[:success] = t "welcom"
     redirect_to @user
     else
-    flash[:error] = I18n.t("create_user")
+    flash[:error] = t "create_user"
     render :new
     end
   end
@@ -33,5 +33,4 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
-
 end
