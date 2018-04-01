@@ -17,13 +17,14 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new user_params
+
     if @user.save
-    log_in @user
-    flash[:success] = t "welcom"
-    redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "please_check"
+      redirect_to root_url
     else
-    flash[:error] = t "create_user"
-    render :new
+      flash[:error] = t "create_user"
+      render :new
     end
   end
 
@@ -47,7 +48,7 @@ class UsersController < ApplicationController
 
   def verify_user
     @user = User.find_by id: params[:id]
-    redirect_to home_url unless @user.current_user? current_user
+    #redirect_to root_url unless @user.current_user? current_user
   end
 
   def current_user? user
@@ -70,11 +71,11 @@ class UsersController < ApplicationController
 
   def correct_user
     @user = User.find_by id: params[:id]
-    redirect_to home_url unless current_user? @user
+    redirect_to root_url unless @user.current_user? current_user
   end
 
   def admin_user
-    redirect_to home_url unless current_user.admin?
+    redirect_to root_url unless current_user.admin?
   end
 
   def find_user
